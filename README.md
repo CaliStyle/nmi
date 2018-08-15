@@ -1,4 +1,11 @@
-Node SDK for Networking Merchants Inc's (NMI) Three Step Redirect API, Query API, and Direct API
+# NMI SDK
+
+[![NPM version][npm-image]][npm-url]
+[![Build Status][ci-image]][ci-url]
+[![Test Coverage][coverage-image]][coverage-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
+
+Strongly typed Node SDK for Networking Merchants Inc's (NMI) Three Step Redirect API, Query API, and Direct API
 
 # Installation
 ```
@@ -68,3 +75,12 @@ catch(err) {
 
 }
 ```
+
+[npm-image]: https://img.shields.io/npm/v/@calistyle/nmi.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@calistyle/nmi
+[ci-image]: https://img.shields.io/circleci/project/github/calistyle-app/nmi/master.svg
+[ci-url]: https://circleci.com/gh/calistyle-app/nmi/tree/master
+[daviddm-image]: http://img.shields.io/david/calistyle-app/nmi.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/calistyle-app/nmi
+[coverage-image]: https://img.shields.io/codeclimate/coverage/github/calistyle-app/nmi.svg?style=flat-square
+[coverage-url]: https://codeclimate.com/github/calistyle-app/nmi/coverage
