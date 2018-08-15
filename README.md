@@ -78,9 +78,9 @@ catch(err) {
 
 [npm-image]: https://img.shields.io/npm/v/@calistyle/nmi.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@calistyle/nmi
-[ci-image]: https://img.shields.io/circleci/project/github/calistyle/nmi/master.svg
-[ci-url]: https://circleci.com/gh/calistyle/nmi/tree/master
-[daviddm-image]: http://img.shields.io/david/calistyle/nmi.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/calistyle/nmi
-[coverage-image]: https://img.shields.io/codeclimate/coverage/github/calistyle/nmi.svg?style=flat-square
-[coverage-url]: https://codeclimate.com/github/calistyle/nmi/coverage
+[ci-image]: https://img.shields.io/circleci/project/github/CaliStyle/nmi/master.svg
+[ci-url]: https://circleci.com/gh/CaliStyle/nmi/tree/master
+[daviddm-image]: http://img.shields.io/david/CaliStyle/nmi.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/CaliStyle/nmi
+[coverage-image]: https://img.shields.io/codeclimate/coverage/github/CaliStyle/nmi.svg?style=flat-square
+[coverage-url]: https://codeclimate.com/github/CaliStyle/nmi/coverage
