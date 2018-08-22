@@ -4,9 +4,11 @@ toc:
      - configure
      - request
      - query
+     - direct
   - name: Transactions
     children:
      - transaction.get
+     - transaction.list
      - transaction.create
      - transaction.execute
      - transaction.update

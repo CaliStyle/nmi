@@ -373,10 +373,8 @@ export class NMI {
    * @param {Query} qs query string
    */
   query(qs: {[key: string]: any, username?: string, password?: string} = {}) {
-    console.log('BROKE 1', qs, this.config)
     qs.username = qs.username || this.config.username
     qs.password = qs.password || this.config.password
-    console.log('BROKE 2', qs, this.config)
     return request({
       method: 'POST',
       url: urlQuery,
