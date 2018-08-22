@@ -1,6 +1,6 @@
 {
   "name": "@calistyle/nmi",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Node SDK for Networking Merchants Inc's (NMI) Three Step Redirect API, Query API, Direct API",
   "author": {
     "name": "scott-wyatt",

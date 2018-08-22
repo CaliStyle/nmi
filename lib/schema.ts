@@ -291,7 +291,7 @@
  * @property {string} customerVaultId            customer vault id, only used for `reportType`='customer_vault'
  * @property {string} dateSearch                 'created', 'updated' or 'created,updated', used for customer_vault
  * @property {string} resultLimit                limit
- * @property {string} pageNumber                 page  
+ * @property {string} pageNumber                 page
  */
 
 /**
@@ -364,7 +364,7 @@
  * @property {string} dupSeconds
  * @property {string} avsReject
  * @property {string} cvvReject
- * 
+ *
  * @property {Billing} billing
  * @property {Shipping} shipping
  * @property {Product[]} product
@@ -386,7 +386,7 @@
  * @property {string} resultCode
  * @property {string} actionType
  * @property {string} subscriptionId
- * 
+ *
  * @property {Plan} plan
  * @property {Billing} billing
  * @property {Shipping} shipping
@@ -399,7 +399,7 @@
  * @property {string} resultCode
  * @property {string} actionType
  * @property {string} customerVaultId
- * 
+ *
  * @property {BillingExtended} billing
  * @property {Shipping} shipping
  */
@@ -499,6 +499,10 @@
  * @property {string} action.processorResponseCode
  * @property {string} action.deviceLicenseNumber
  * @property {string} action.deviceNickname
+ */
+
+/**
+ * @typedef {Object} ListTransactionsResponse
  */
 
 /**

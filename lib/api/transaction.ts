@@ -14,7 +14,19 @@ export const Transaction = {
     let res = await this.query({
       transaction_id: transactionId,
       result_limit: 1
-    });
+    })
+    return this.getChild(res, 'nm_response.transaction')
+  },
+
+  /**
+   * List transactions by query
+   *
+   * @name transaction.list
+   * @param qs
+   * @returns {ListTransactionsResponse}
+   */
+  list: async function(qs = {}) {
+    let res = await this.query(qs)
     return this.getChild(res, 'nm_response.transaction')
   },
 
@@ -26,7 +38,7 @@ export const Transaction = {
    * @returns {CreateTransactionResponse}
    */
   create: function(type, transaction) {
-    return this.request({[`${type}`]: transaction});
+    return this.request({[`${type}`]: transaction})
   },
 
   /**
@@ -35,7 +47,7 @@ export const Transaction = {
    * @param {CaptureTransaction} capture capture object
    */
   capture: function(capture) {
-    return this.request({'capture': capture});
+    return this.request({'capture': capture})
   },
 
   /**
@@ -44,7 +56,7 @@ export const Transaction = {
    * @param {UpdateTransaction} update update object
    */
   update: function(update) {
-    return this.request({'update': update});
+    return this.request({'update': update})
   },
 
   /**

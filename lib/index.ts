@@ -25,14 +25,15 @@ export class NMI {
   public subscription // : Subscription
 
   public config: {
-    apiKey: string,
-    username: string,
-    password: string,
-    transform: boolean,
-    debug: boolean
-  }
+    apiKey?: string,
+    username?: string,
+    password?: string,
+    transform?: boolean,
+    debug?: boolean
+  } = {}
 
   constructor() {
+
     this.customer = Customer
     this.plan = Plan
     this.transaction = Transaction
@@ -97,9 +98,9 @@ export class NMI {
    */
   configure(options) {
     this.config = {
-      apiKey: options.apiKey || '',
-      username: options.username || '',
-      password: options.password || '',
+      apiKey: options.apiKey || this.config.apiKey || '',
+      username: options.username || this.config.username || '',
+      password: options.password || this.config.password || '',
       transform: options.transform !== false,
       debug: options.debug || false
     }
@@ -371,12 +372,13 @@ export class NMI {
    * @name query
    * @param {Query} qs query string
    */
-  query(qs: {username?: string, password?: string} = {}) {
+  query(qs: {[key: string]: any, username?: string, password?: string} = {}) {
+    console.log('BROKE 1', qs, this.config)
     qs.username = qs.username || this.config.username
     qs.password = qs.password || this.config.password
-
+    console.log('BROKE 2', qs, this.config)
     return request({
-      method: 'GET',
+      method: 'POST',
       url: urlQuery,
       qs: qs,
       strictSSL: true
