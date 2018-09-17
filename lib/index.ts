@@ -24,7 +24,7 @@ export class NMI {
   public transaction // : Transaction
   public subscription // : Subscription
 
-  public config: {
+  private config: {
     apiKey?: string,
     username?: string,
     password?: string,
@@ -32,7 +32,9 @@ export class NMI {
     debug?: boolean
   } = {}
 
-  constructor() {
+  constructor(options = {}) {
+
+    this.config = this.configure(options)
 
     this.customer = Customer
     this.plan = Plan
@@ -96,8 +98,8 @@ export class NMI {
    * @param {bool}   options.transform    disable transformations
    * @param {bool}   options.debug        output verbose debug information
    */
-  configure(options) {
-    this.config = {
+  configure(options: { apiKey?: string, username?: string, password?: string, transform?: boolean, debug?: boolean } = {}) {
+    return {
       apiKey: options.apiKey || this.config.apiKey || '',
       username: options.username || this.config.username || '',
       password: options.password || this.config.password || '',

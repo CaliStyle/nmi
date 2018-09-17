@@ -2,8 +2,7 @@ const NMI = require('../../dist').NMI
 describe('#Customer', () => {
   let nmi
   beforeEach(() => {
-    nmi = new NMI()
-    nmi.configure({
+    nmi = new NMI({
       // Demo Sandbox Key
       apiKey: '2F822Rw39fx762MaV7Yy86jXGTC7sCDy'
     })

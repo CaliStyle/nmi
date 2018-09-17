@@ -3,8 +3,7 @@ const NMI = require('../../dist').NMI
 describe('#Transaction', () => {
   let nmi
   beforeEach(() => {
-    nmi = new NMI()
-    nmi.configure({
+    nmi = new NMI({
       username: process.env.TEST_USERNAME,
       password: process.env.TEST_PASSWORD
     })
